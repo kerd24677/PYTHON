@@ -1,0 +1,20 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+a=int(input("Birinci Sayıyı Giriniz: a "))
+b=int(input("İkinci Sayıyı Giriniz: b"))
+c=input("""Yapmak İstediğiniz İşlemi Belirtiniz: "+","-","*","/" """)
+
+def process(a,b):
+       if(c=='+'):
+        return a+b
+       elif(c=='-'):
+         return a-b
+       elif(c=='*'):
+          return a*b
+       elif (c=='/'):
+          return a/b
+       else:
+         print("Yapmak İstediğiniz İşlem Tarafımızda bulunmamaktadır.")
+   
+print(f"Birinci Sayıyı Giriniz: {a}, İkinci Sayıyı Giriniz: {b} {process(a,b)}")
